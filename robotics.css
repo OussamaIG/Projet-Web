@@ -9,7 +9,7 @@
     flex-direction: column;
 }
 body{
-    background-color: #e4fde1;
+    background-color: var(--main);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
@@ -38,8 +38,18 @@ body{
 }
 .main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 40px;
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 .title{
     display: flex;
@@ -58,97 +68,60 @@ h1{
     font-size: 22px;
     font-weight: 600;
 }
-.mainb{
-    display: grid;
-    grid-template-columns: 75% 25%;
+.icon{
+    font-size: 25px;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+.image{
+    height: 450px;
+    width: 90%;
+    margin-left: 10px;
+    position: relative;
+    animation-name: comingto;
+    animation-duration: 0.8s;
+}
+.mainimage{
+    max-width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+.readmore{
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.title.read{
+    margin-top: -18px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
 }
 .card{
-    box-shadow: 0px 0px 20px rgb(128, 126, 126);
-    height: 500px;
-    width: 300px;
-    margin-left: 30px;
+    height: 175px;
+    width: 200px;
+    background-color: var(--second);
     border-radius: 20px;
-    margin-top: -35px;
-    display: flex;
-    flex-direction: column;
-    animation-name: coming;
-    animation-duration: 1s;
-    position: relative;
+    margin: 10px;
+    margin-top: -5px;
+    padding-bottom: -10px;
 }
-img{
+.img{
+    position: relative;
     max-width: 100%;
     height: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.card .infos{
-    height: 300px;
-    display: flex;
-    background-color: var(--second);
-    flex-direction: column;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    font-weight: 600;
-    font-size: 13px;
-}
-.card .infos .text{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+a{
     color: var(--black);
-}
-.card .infos .text.one{
-    margin-top: -20px;
-}
-.card .infos .text.two{
-    margin-top: -50px;
-}
-p{
-    padding-top: 3px;
-}
-#move{
-    padding-top: 22px;
-}
-h6{
-    font-size: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    text-decoration: none;
     font-weight: 600;
-    color: var(--black);
-}
-.article p{
-    font-weight: 600;
-    margin-left: 20px;
-    margin-top: -2px;
-}
-.title.two{
-    margin-top: -10px;
-}
-.footer{
-    height: 175px;
-    width: 1300px;
-    margin-left: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.cardb{
-    height: 175px;
-    width: 200px;
-    background-color: var(--second);
-    border-radius: 20px;
-    margin:10px;
-    padding-bottom: -10px;
-}
-.cardb:hover{
-    animation-name: rotate;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-.img{
-    max-height: 100%;
-    width: auto;
 }
 h3{
     font-size: 15px;
@@ -157,18 +130,18 @@ h3{
     font-weight: 600;
     color: var(--black);
 }
+.card:hover{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
 .empty{
-    height: 20px;
+    height: 30px;
 }
-a{
-    color: var(--black);
-    text-decoration: none;
-    font-weight: 600;
-}
-.article{
-    animation-name: comingto;
-    animation-duration: 1s;
+.text{
     position: relative;
+    animation-name: coming;
+    animation-duration: 0.8s;
 }
 @keyframes rotate {
     0%{
