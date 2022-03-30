@@ -1,0 +1,210 @@
+:root {
+    --main: #e4fde1;
+    --second: #98CEFF;
+    --third: #FFB8BA;
+    --black: #100c08;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    background-color: var(--main);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.topbarre{
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 640px;
+    height: 50px;
+    width: 70px;
+    background-color: var(--third);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.atop{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: var(--black);
+    text-transform: lowercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 50px;
+    align-items: center;
+}
+.title.one{
+    animation-name: rottate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.barre{
+    height: 25px;
+    width: 3px;
+    background-color: var(--third);
+    margin-right: 10px;
+}
+h1{
+    font-size: 22px;
+    font-weight: 600;
+}
+.icon{
+    font-size: 25px;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+.icon.one{
+    color: #F0DB4F;
+    animation-name: icon;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.icon.two{
+    color: #264de4;
+    animation-name: icon;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.icon.three{
+    color: #306998;
+    animation-name: python;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.image{
+    height: 450px;
+    width: 90%;
+    margin-left: 10px;
+    position: relative;
+    animation-name: comingto;
+    animation-duration: 0.8s;
+}
+.mainimage{
+    max-width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+.readmore{
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+.card{
+    height: 175px;
+    width: 200px;
+    background-color: var(--second);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: -5px;
+    padding-bottom: -10px;
+}
+.img{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+a{
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 600;
+}
+h3{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 600;
+    color: var(--black);
+}
+.card:hover{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.empty{
+    height: 30px;
+}
+.text{
+    position: relative;
+    animation-name: coming;
+    animation-duration: 0.8s;
+}
+@keyframes rotate {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        font-weight: 700;
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+@keyframes coming{
+    50%{
+        right: -100%;
+    } 
+    100%{
+        right: 0%;
+    }   
+}
+@keyframes comingto{
+    50%{
+        left: -100%;
+    } 
+    100%{
+        left: 0%;
+    }   
+}
+.icon{
+    font-size: 25px;
+    margin-top: -2px;
+}
+@keyframes icon {
+    50%{
+        transform: scale(0);
+        color: green;
+    }
+}
+@keyframes python {
+    50%{
+        color: #FFE873;
+        transform: scale(0);
+    }
+    
+}
