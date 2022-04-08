@@ -162,10 +162,11 @@ h1{
     width: 50%;
     height: 400px;
     margin-left: 20px;
-    font-weight: 600;
+    font-weight: 590;
     position: relative;
     animation-name: comingto;
     animation-duration: 0.8s;
+    margin-right: 25px;
 }
 .picture{
     width: 50%;
