@@ -1,3 +1,4 @@
+<!-- Commentaire type 1 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +11,28 @@
 </head>
 <body>
     <div class="body">
-        <header><a class="atop" href="index.html" class="homebtn"><div class="topbarre">
+        <!-- Le code de button de top barre -->
+        <header>
+            <a class="atop" href="index.html" class="homebtn">
+                <!-- une div dans un ahref, la div contient le code de l'icone -->
+                <div class="topbarre">
             <ion-icon class="icon" name="home-outline"></ion-icon>
-        </div></a>
+                </div>
+            </a>
         </header>
+        <!-- Fin code de top barre -->
+        <!-- Le code de main -->
         <main>
+            <!-- Class main qui contient tous le contenue de main -->
             <div class="main">
+                <!-- div qui contient le titre  -->
                 <div class="title">
                     <div class="barre"></div>
                     <h1>Google Article</h1>
                 </div>
+                <!-- div qui contient le text et la cart'e a coté -->
                 <div class="mainb">
+                    <!-- div qui contient le texte -->
                     <div class="article">
                         <p>
                             Google LLC is an American multinational technology company that focuses on artificial intelligence, search engine, online advertising, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.
@@ -30,6 +42,7 @@
     Google is well-known for it highly ambitious technological innovations aimed at solving humanity's biggest problems. Some of these innovations include quantum computing (Sycamore), self-driving cars (Waymo, formerly the Google self-driving project), smart cities (Sidewalk Labs), and transformer models (Google Brain). 
                         </p>
                     </div>
+                    <!-- div qui contient la carte -->
                     <div class="card">
                         <img src="images/nathana-reboucas-c4aT8MfEzdw-unsplash.jpg" alt="">
                         <div class="infos">
@@ -60,11 +73,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="title two">
+                <!-- div qui contient le text 'Read More' -->
+                <div class="title two scroll">
                     <div class="barre"></div>
                     <h1>Read More</h1>
                 </div>
-                <div class="footer">
+                <!-- Fin code de top barre -->
+                <div class="footer scroll" >
+                    <!-- 5 div chaqu'une est une carte -->
                     <div class="cardb">
                         <a href="">
                             <img class="img" src="images/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="">
@@ -95,9 +111,11 @@
                         </a>
                     </div>
                 </div>
+                <!-- j'ai ajouté cette div (vide) pour avoir du espace aprés la derniere div -->
                 <div class="empty"></div>
             </div>
         </main> 
+        <!-- Fin code de main -->
     </div>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,300&family=Poppins:wght@200&family=Red+Hat+Mono:ital,wght@1,300&display=swap');

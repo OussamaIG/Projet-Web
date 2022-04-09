@@ -1,36 +1,50 @@
+<!-- Remarque: Pour les autres fichiers j'ai fait les commentaires parce que c'est le meme code html qui se repete -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Inform Me</title>
     <link rel="icon" href="images/bulb-outline.svg" type="image/icon type">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="body">
-        <a class="atop" href="" class="homebtn"><div class="topbarre">
+        <!-- Debut code de button de top barre -->
+        <a class="atop" href="" class="homebtn">
+            <!-- une div dans un ahref, la div contient le code de l'icone -->
+            <div class="topbarre">
             <ion-icon class="icon" name="home-outline"></ion-icon>
-        </div></a>
+            </div>
+        </a>
+        <!-- Fin code de top barre -->
+        <!-- Debut code de le menu -->
         <div class="main">
+            <!-- deux div une pour les cards en top et une autre pour bottom, j'ai fais ca pour utiliser le flex-box -->
+            <!-- Debut div top -->
             <div class="top">
+                <!-- On trouvent quatre div une pour chaque card -->
                <div class="new"><a href="article1.html">
                 <div class="card">
+                    <!-- une div qui contient l'image -->
                     <div class="cardimage">
                         <img src="images/nathana-reboucas-c4aT8MfEzdw-unsplash.jpg" alt="">
                     </div>
+                    <!-- une div qui contient le text -->
                     <div class="cardtext">
                     <p >Google LLC is an American multinational technology company that focuses on artificial intelligence, search engine, online advertising, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics. It has been referred to as the "most powerful company in the world" and one of the world's most valuable brands due to its market dominance, data collection, and technological advantages in the area of artificial intelligence.[11][12][13] It is considered one of the Big Five American information technology companies, alongside Amazon, Apple, Meta, Microsoft, and Tesla.
 
                         Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California. Together they own about 14% of its publicly listed shares and control 56% of the stockholder voting power through super-voting stock. The company went public via an initial public offering (IPO) in 2004. In 2015, Google was reorganized as a wholly owned subsidiary of Alphabet Inc. Google is Alphabet's largest subsidiary and is a holding company for Alphabet's Internet properties and interests. Sundar Pichai was appointed CEO of Google on October 24, 2015, replacing Larry Page, who became the CEO of Alphabet. On December 3, 2019, Pichai also became the CEO of Alphabet. 
                     </p>
                     </div>
+                    <!-- une div qui contient le nom de card -->
                     <div class="cardbutton">
                         <a href="article1.html" class="button">Google</a>
                     </div>
                 </div>
                </a></div>
+               <!-- j'ai utiliser la meme méthode pour les autres div -->
                <div class="new one"><a href="robotics.html">
                 <div class="card">
                     <div class="cardimage">
@@ -70,8 +84,8 @@
                         </div>
                     </div>
                 </a></div>
-                
             </div>
+            <!-- Div div bottom -->
             <div class="bottom">
                <div class="bt"> <a href="freelance.html">
                 <div class="card">
@@ -127,9 +141,11 @@
                 </a></div>
                 
             </div>
+            <!-- j'ai ajouté cette div (vide) pour avoir du espace aprés la derniere div -->
             <div class="empty"></div>
         </div>
     </div>
+    <!-- On trouvent ici l'import du font, et l'autre script c'est pour utiliser les icones sans les télécharger -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,300&family=Poppins:wght@200&family=Red+Hat+Mono:ital,wght@1,300&display=swap');
         </style>
